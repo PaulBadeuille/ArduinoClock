@@ -29,7 +29,8 @@ After these steps, you'll just have to work on the esthetic aspect to lay the cl
 
 <hr />
 
-<h2>Tutoriel :</h2>
+<details>
+  <summary><h2>Tutoriel :</h2></summary>
 
 <strong>Composants requis :</strong>
   - Arduino Uno R3
@@ -50,3 +51,4 @@ After these steps, you'll just have to work on the esthetic aspect to lay the cl
   Téléverser le fichier horloge.ino dans l'Arduino. Vous aurez également besoin de ces librairies : DHT, DS3231, FastLed and Adafruit_BMP085, Adafruit_Sensor (disponibles dans le dossier libraries).
   
 Après ces étapes, vous avez juste à peaufiner l'aspect esthétique pour rendre l'horologe présentable. Vous pouvez faire un boitier en bois (comme sur les photos) ou en plastique en fonction de la décoration de votre pièce. Pour finir, vous avez juste à brancher l'Arduino sur une source 5V et profitez !
+</details>
