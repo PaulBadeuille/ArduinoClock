@@ -18,7 +18,7 @@ Un réveil basé sur Arduino avec différentes fonctions : météo, température
   - 4x4 Button Keypad
   
 <strong>Wiring :</strong>
-  Please wire all components as explained in the wiring diagram.
+  Please wire all components as explained in the wiring diagram (Wiring_Diagram.png).
   
 <strong>Programming :</strong>
   Upload horloge.ino file in Arduino. You will also need these libraries : DHT, DS3231, FastLed and Adafruit_BMP085, Adafruit_Sensor (available in libraries folder).
@@ -42,7 +42,7 @@ After these steps, you'll just have to work on the esthetic aspect to lay the cl
   - Matrice de bouton 4x4
   
 <strong>Câblage :</strong>
-  Le câblage se fait comme expliqué sur le schéma de câblage.
+  Le câblage se fait comme expliqué sur le schéma de câblage (Wiring_Diagram.png).
   
 <strong>Programmation :</strong>
   Téléverser le fichier horloge.ino dans l'Arduino. Vous aurez également besoin de ces librairies : DHT, DS3231, FastLed and Adafruit_BMP085, Adafruit_Sensor (disponibles dans le dossier libraries).
