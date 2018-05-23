@@ -5,6 +5,7 @@ Un réveil basé sur Arduino avec différentes fonctions : météo, température
 
 <h2>Tutorial :</h2>
    <strong>Components needed :</strong>
+   
   - Arduino Uno R3
   - Clock Module RTC DS3231
   - Temperature Sensor DHT11
@@ -28,6 +29,7 @@ After these steps, you'll just have to work on the esthetic aspect to lay the cl
 
 <h2>Tutoriel :</h2>
 <strong>Composants requis :</strong>
+
   - Arduino Uno R3
   - Module horloge RTC DS3231
   - Capteur de température DHT11
