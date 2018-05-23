@@ -30,7 +30,7 @@ After these steps, you'll just have to work on the esthetic aspect to lay the cl
 <hr />
 
 <details>
-  <summary><h2>Tutoriel :</h2></summary>
+  <summary>Tutoriel :</summary>
 
 <strong>Composants requis :</strong>
   - Arduino Uno R3
