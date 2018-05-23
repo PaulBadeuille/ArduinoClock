@@ -1,6 +1,6 @@
 # ArduinoClock
 
-An alarm clock based on Arduino with many features like weather, temperature, humidity...
+An alarm clock based on Arduino with many features like weather, temperature, humidity...<br />
 Un réveil basé sur Arduino avec différentes fonctions : météo, température, humidité...
 
 <h2>Tutorial :</h2>
