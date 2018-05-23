@@ -1,7 +1,8 @@
 # ArduinoClock
+
 An alarm clock based on Arduino with many features like weather, temperature, humidity...
 
-Tutorial :
+<h2>Tutorial :</h2>
 
 Components needed :
   - Arduino Uno R3
