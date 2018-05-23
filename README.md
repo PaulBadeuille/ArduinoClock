@@ -4,7 +4,7 @@ An alarm clock based on Arduino with many features like weather, temperature, hu
 
 <h2>Tutorial :</h2>
 
-Components needed :
+<h3>Components needed :</h3>
   - Arduino Uno R3
   - Clock RTC DS3231
   - Temperature Sensor DHT11
@@ -16,7 +16,7 @@ Components needed :
   - LED Matrix WS2812B
   - 4x4 Button Keypad
   
-Wiring :
+<h3>Wiring :</h3>
   Please wire all components as explained in the wiring diagram.
   
 Programming :
