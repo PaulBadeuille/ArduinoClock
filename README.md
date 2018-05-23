@@ -4,7 +4,7 @@ An alarm clock based on Arduino with many features like weather, temperature, hu
 Un réveil basé sur Arduino avec différentes fonctions : météo, température, humidité... Ce réveil a été réalisé dans le cadre d'un projet d'école. Vous trouverez plus d'informations sur ce projet dans le fichier Compte_Rendu.pdf.
 
 <h2>Tutorial :</h2>
-   <strong>Components needed :</strong>
+   <strong>Needed components :</strong>
    
   - Arduino Uno R3
   - Clock Module RTC DS3231
