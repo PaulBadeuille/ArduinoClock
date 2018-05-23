@@ -6,7 +6,7 @@ An alarm clock based on Arduino with many features like weather, temperature, hu
 
 <strong>Components needed :</strong>
   - Arduino Uno R3
-  - Clock RTC DS3231
+  - Clock Module RTC DS3231
   - Temperature Sensor DHT11
   - Pressure Sensor BMP180
   - Photoresistor (and a 10kOhm resistor)
