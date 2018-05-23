@@ -23,7 +23,7 @@ Un réveil basé sur Arduino avec différentes fonctions : météo, température
 <strong>Programming :</strong>
   Upload horloge.ino file in Arduino. You will also need these libraries : DHT, DS3231, FastLed and Adafruit_BMP085, Adafruit_Sensor (available in libraries folder).
   
-After these steps, you'll just have to work on the esthetic aspect to lay the clock on a table for example. You can make an enclosure in wood (like pictures) or plastic depending your house decoration. Now just plug-in the Arduino in a 5V source and enjoy !
+After these steps, you'll just have to work on the esthetic aspect to lay the clock on a table for example. You can make an enclosure in wood (like pictures) or plastic depending your house decoration. Now just plug-in the Arduino in a 5V source and enjoy (see buttons.png to know how to use buttons) !
 
 <hr />
 
@@ -47,4 +47,4 @@ After these steps, you'll just have to work on the esthetic aspect to lay the cl
 <strong>Programmation :</strong>
   Téléverser le fichier horloge.ino dans l'Arduino. Vous aurez également besoin de ces librairies : DHT, DS3231, FastLed and Adafruit_BMP085, Adafruit_Sensor (disponibles dans le dossier libraries).
   
-Après ces étapes, vous avez juste à peaufiner l'aspect esthétique pour rendre l'horologe présentable. Vous pouvez faire un boitier en bois (comme sur les photos) ou en plastique en fonction de la décoration de votre pièce. Pour finir, vous avez juste à brancher l'Arduino sur une source 5V et profitez !
+Après ces étapes, vous avez juste à peaufiner l'aspect esthétique pour rendre l'horloge présentable. Vous pouvez faire un boitier en bois (comme sur les photos) ou en plastique en fonction de la décoration de votre pièce. Pour finir, vous avez juste à brancher l'Arduino sur une source 5V et profitez (voir buttons.png pour l'utilisation des boutons) !
