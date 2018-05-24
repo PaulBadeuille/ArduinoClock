@@ -8,13 +8,13 @@ Un réveil basé sur Arduino avec différentes fonctions : météo, température
    
   - Arduino Uno R3
   - Clock Module RTC DS3231
-  - Temperature Sensor DHT11
+  - Temperature & Humidity Sensor DHT11
   - Pressure Sensor BMP180
   - Photoresistor (and a 10kOhm resistor)
   - Vibrating Sensor (HDX)
   - Buzzer
   - Wiring Jumpers
-  - LED Matrix WS2812B
+  - 256 LEDs Matrix WS2812B (https://www.adafruit.com/product/2294)
   - 4x4 Button Keypad
   
 <strong>Wiring :</strong>
@@ -32,13 +32,13 @@ After these steps, you'll just have to work on the esthetic aspect to lay the cl
 
   - Arduino Uno R3
   - Module horloge RTC DS3231
-  - Capteur de température DHT11
+  - Capteur de température et d'humidité DHT11
   - Capteur de pression BMP180
   - Photorésistance (et une résistance de 10kOhm)
   - Capteur de vibration (HDX)
   - Buzzer
   - Câbles
-  - Matrice LED WS2812B
+  - Matrice de 256 LEDs WS2812B (https://www.adafruit.com/product/2294)
   - Matrice de bouton 4x4
   
 <strong>Câblage :</strong>
