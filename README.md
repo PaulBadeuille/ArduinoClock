@@ -1,6 +1,6 @@
 # ArduinoClock
 
-An alarm clock based on Arduino with many features like weather, temperature, humidity... This alarm clock has been realized for a school project. You can find more details of this project (in French) in the file Compte_Rendu.pdf.<br />
+An alarm clock based on Arduino with many features like weather, temperature, humidity... This alarm clock was made as part of my university project. You can find more details of this project (in French) in the file Compte_Rendu.pdf.<br />
 Un réveil basé sur Arduino avec différentes fonctions : météo, température, humidité... Ce réveil a été réalisé dans le cadre d'un projet d'école. Vous trouverez plus d'informations sur ce projet dans le fichier Compte_Rendu.pdf.
 
 <h2>Tutorial :</h2>
@@ -23,7 +23,7 @@ Un réveil basé sur Arduino avec différentes fonctions : météo, température
 <strong>Programming :</strong>
   Upload horloge.ino file in Arduino. You will also need these libraries : DHT, DS3231, FastLed, Adafruit_BMP085 and Adafruit_Sensor (available in libraries folder).
   
-After these steps, you'll just have to work on the esthetic aspect to lay the clock on a table for example. You can make an enclosure in wood (like pictures) or plastic depending your house decoration. You can also add a paper sheet in front of the LED panel in order to spread the light. Now just plug-in the Arduino in a 5V source and enjoy (see buttons.png to know how to use buttons) !
+After these steps, you'll just have to work on the esthetic aspect to lay the clock on a table for example. You can make an enclosure in wood (like pictures) or plastic depending on your house decoration. You can also add a sheet of paper in front of the LED panel in order to soften the light. Now just plug-in the Arduino in a 5V source and enjoy (see buttons.png to know how to use the buttons) !
 
 <hr />
 
