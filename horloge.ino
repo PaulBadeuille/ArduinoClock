@@ -1,13 +1,12 @@
 #include <FastLED.h>
-#include <DS3231.h>
+#include "RTClib.h"
 #include <DHT.h>
 #include <Adafruit_BMP085.h>
 
 CRGB leds[256];
 Adafruit_BMP085 bmp;
-DS3231 clock;
+RTC_DS3231 rtc;
 DHT dht(6, DHT11);
-RTCDateTime dt;
 int r = 135, g = 135, b = 135, fonc = 0, alarmh = 0, alarmm = 0, etatalarm = 0;
 
 #include "gerer_matrice.h"
@@ -18,7 +17,7 @@ int colonne[] = {8, 9, 10, 7};
 int col_scan;
 
 void setup() {
-  clock.begin();
+  rtc.begin();
   dht.begin();
   bmp.begin();
   pinMode(11, OUTPUT);
@@ -66,7 +65,8 @@ void loop()
   else {
     afficherHumidite();
   }
-  if (alarmm == clock.getDateTime().minute && alarmh == clock.getDateTime().hour && etatalarm == 1) {
+  DateTime now = rtc.now();
+  if (alarmm == now.minute() && alarmh == now.hour() && etatalarm == 1) {
     while (etatalarm == 1) {
       alarme(etatalarm);
     }
@@ -111,8 +111,8 @@ void toucherBouton(int i, int j)
   if (i == 1 && j == 3)reset(r, g, b);
   if (i == 2 && j == 0 && fonc == 2)augmenterminute(alarmm);
   if (i == 2 && j == 1 && fonc == 2)augmenterheure(alarmh);
-  if (i == 2 && j == 2) {}
-  if (i == 2 && j == 3) {}
+  if (i == 2 && j == 2) increaseTime();
+  if (i == 2 && j == 3) decreaseTime();
   if (i == 3 && j == 0 && fonc == 2)diminuerminute(alarmm);
   if (i == 3 && j == 1 && fonc == 2)diminuerheure(alarmh);
   if (i == 3 && j == 2)changeretat(etatalarm);
@@ -215,10 +215,10 @@ void afficherTemperature() {
 
 void afficherDate() {
 
-  dt = clock.getDateTime();
+  DateTime now = rtc.now();
 
-  int jour = dt.day;
-  int mois = dt.month;
+  int jour = now.day();
+  int mois = now.month();
   int jour_0 = 0;
   int jour_1 = 0;
   int mois_0 = 0;
@@ -262,10 +262,10 @@ void afficherDate() {
 
 void afficherHeure()
 {
-  dt = clock.getDateTime();
+  DateTime now = rtc.now();
 
-  int minutes = dt.minute;
-  int heures = dt.hour;
+  int minutes = now.minute();
+  int heures = now.hour();
   int minute_0 = 0;
   int minute_1 = 0;
   int heure_0 = 0;
@@ -314,7 +314,7 @@ void afficherHeure()
   if (photo < 0.20) {
     photo = 0.20;
   }
-  afficherMatrice(afficheur, floor(r * photo), floor(g * photo), floor(b * photo), 0, dt.second);
+  afficherMatrice(afficheur, floor(r * photo), floor(g * photo), floor(b * photo), 0, now.second());
 }
 
 void augmenterminute(int& alarmm)
@@ -438,4 +438,12 @@ void alarme(int& etatalarm) {
       }
     }
   }
+}
+
+void increaseTime(){
+  rtc.adjust(rtc.now() + TimeSpan(60));
+}
+
+void decreaseTime(){
+  rtc.adjust(rtc.now() - TimeSpan(60));
 }
